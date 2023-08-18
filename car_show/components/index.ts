@@ -17,5 +17,5 @@ export {
     SearchBar,
     SeacrhManuFacturer,
     CarCard,
-    CarDetails
+    CarDetails,
 }
