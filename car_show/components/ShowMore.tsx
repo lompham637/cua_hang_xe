@@ -30,4 +30,4 @@ const ShowMore = ({pageNumber, isNext}: ShowMoreProps) => {
   )
 }
 
-export default ShowMore;
+export default ShowMore
