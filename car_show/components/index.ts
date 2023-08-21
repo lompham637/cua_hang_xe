@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import SeacrhManuFacturer from "./SeacrhManuFacturer";
 import CarCard from "./CarCard";
 import CarDetails from "./CarDetails";
+import ShowMore from "./ShowMore";
 
 export {
     Hero,
@@ -18,4 +19,5 @@ export {
     SeacrhManuFacturer,
     CarCard,
     CarDetails,
+    ShowMore
 }

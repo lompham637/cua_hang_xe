@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import { CustomFilter, Hero, SearchBar, CarCard } from '@/components'
+import { CustomFilter, Hero, SearchBar, CarCard, ShowMore } from '@/components'
 import { fetchCars } from '@/utils';
 import { yearsOfProduction, fuels } from '@/constants';
 
-export default async function Home({ searchParams}) {
+export default async function Home({ searchParams }) {
 
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || '',
@@ -43,6 +43,10 @@ export default async function Home({ searchParams}) {
               ))}
 
             </div>
+            <ShowMore 
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) : (
           <div className="home__error-container"> 
@@ -50,9 +54,7 @@ export default async function Home({ searchParams}) {
             <p> {allCars?.message} </p> 
           </div>
         )}
-
       </div>
-
     </main>
   )
 }
