@@ -7,5 +7,5 @@ yarn dev
 # or
 pnpm dev
 
-Trang web sử dụng API từ "https://rapidapi.com/apininjas/api/cars-by-api-ninjas"
-Trang web có các chức năng cơ bản như tìm kiếm thông tin xe theo các filter xem thông tin xe.
+# Trang web sử dụng API từ "https://rapidapi.com/apininjas/api/cars-by-api-ninjas".
+# Trang web có các chức năng cơ bản như tìm kiếm thông tin xe theo các filter xem thông tin xe.
